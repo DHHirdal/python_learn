@@ -1,0 +1,3 @@
+I am overwriting the file
+this is tried for new line addition
+3rd line aslo added to the file
