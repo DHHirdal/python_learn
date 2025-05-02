@@ -1,0 +1,36 @@
+import numpy as np
+
+print("Accessing 1-D array:")
+arr1 = np.array([10,20,30,40,50,60])
+print("Access 0 index element: ",arr1[0])
+print("Access 1st index element: ", arr1[1])
+print("addition of array elements: ",arr1[0]+arr1[2])
+
+print("Accessing 2-D array:")
+arr2 = np.array([[10,20,30,40],[12,13,14,15],[22,23,24,25]])
+print("Method-1")
+print("Access (0,0) Index element: ",arr2[0][0])
+print("Access 2nd array 3rd element: ",arr2[1][3])
+print("Access 3rd array 2nd element: ",arr2[2][2])
+print("Method-2")
+print("Access (0,0) Index element: ",arr2[0,0])
+print("Access 2nd array 3rd element: ",arr2[1,3])
+print("Access 3rd array 2nd element: ",arr2[2,2])
+print("Accessing 3-D array:")
+arr3=np.array([[[1,2,3], [11,12,13],[22,23,24]],
+               [[32,33,34],[42,43,44],[52,53,54]],
+               [[61,62,63],[71,72,73],[81,82,83]]])
+print("Access (0,0,0) Index element: ",arr3[0,0,0])
+print("Access (0,0,1) Index element: ",arr3[0,0,1])
+print("Access (1,0,0) Index element: ",arr3[1,0,0])
+print("Access (2,2,1) Index element: ",arr3[2,2,1])
+
+print("negative Indexing:")
+print("last element: ", arr1[-1])
+print("last element: ", arr2[-1,-1])
+print("last element: ", arr2[-1,-2])
+print("last element: ", arr2[-2,0])
+print("last element: ", arr3[-1,-1,-1])
+print("last element: ", arr3[-1,-1,-2])
+print("last element: ", arr3[-1,-1,-3])
+print("last element: ", arr3[-1,-2,-3])
